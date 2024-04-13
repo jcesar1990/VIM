@@ -1,6 +1,10 @@
+Para instalar pluggins debemos consultar la pagina vim plug que es un repositorio de github
+junegunn/vim-plug
+https://github.com/junegunn/vim-plug
 Pueden presentarse problemas al momento de instalar YouCompleteMe
 por lo que se recomienda instalarl cmake con sudo.
 Una vez hecho esto se debera ejecutar el install.py dentro de la carpeta de vim
 i /usr/bin/python3 /home/cesar/.vim/plugged/YouCompleteMe/third_party/ycmd/build.py --verbose
 Despues continuar con la instalacion de los pluggins en .vimrmc
+
 
