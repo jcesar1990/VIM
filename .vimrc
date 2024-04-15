@@ -3,6 +3,7 @@ set mouse=a "Permite interactuar con el mouse dentro de Vim
 set numberwidth=1 "Especifica el ancho de los numbers de set number
 set relativenumber "Dependiendo de donde se encuentre el cursor, mostrara el conteo de lineas hacia arriba y abajo
 set clipboard=unnamed "Permite que lo que se copie quede dentro del clipboard
+set clipboard+=unnamedplus
 syntax on "Habilita el  resaltado de sintaxis
 set showcmd "Muestra parcialmente en la barra de estado lo que se esta escribiendo al introducir un comando
 set ruler "Muestra la posicion del cursor en la barra inferior
@@ -24,8 +25,18 @@ set autoread "Actualiza automaticamente el archivo cuando es modificado por otro
 "Configuracion de Pluggins con vim-plug
 call plug#begin('~/.vim/plugged')
 "Configuracion del tema
-"Plug 'crusoexia/vim-monokai'
+Plug 'crusoexia/vim-monokai'
 Plug 'roosta/vim-srcery'
+Plug 'srcery-colors/srcery-vim'
+Plug 'marciomazza/vim-brogrammer-theme'
+Plug 'morhetz/gruvbox' 
+Plug 'tomasr/molokai'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'sjl/badwolf'
+Plug 'lunacookies/vim-colors-xcode'
+Plug 'patstockwell/vim-monokai-tasty'
+Plug 'cormacrelf/vim-colors-github'
+Plug 'phanviet/vim-monokai-pro'
 "Pluggins de Python
 Plug 'vim-python/python-syntax'
 Plug 'Valloric/YouCompleteMe'
@@ -51,10 +62,19 @@ Plug 'tyewang/vimux-jest-test'
 Plug 'janko-m/vim-test'
 
 call plug#end()
-
+" Configuracion de temas
 set background=dark
 "colorscheme monokai
-colorscheme srcery
+"colorscheme brogrammer
+"colorscheme srcery
+"colorscheme gruvbox
+"colorscheme molokai
+"colorscheme badwolf
+"colorscheme xcodehc
+"este monokai si me gusto
+colorscheme vim-monokai-tasty
+"colorscheme github
+"colorscheme monokai_pro
 
 let mapleader=" "
 let NERDTreeQuitOnOpen=1
