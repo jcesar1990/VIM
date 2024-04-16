@@ -21,7 +21,6 @@ set cursorline "Resalta la linea actual donde se encuentra el cursor
 set hlsearch "Resalta todas las intancias de la palabra actualmente buscada en el texto
 set incsearch "Realiza una busqueda incremental mientras se escribe el termino de busqueda en el comando de busqueda
 set autoread "Actualiza automaticamente el archivo cuando es modificado por otro programa externo mientras esta abierto en Vim
-
 "Configuracion de Pluggins con vim-plug
 call plug#begin('~/.vim/plugged')
 "Configuracion del tema
@@ -37,6 +36,12 @@ Plug 'lunacookies/vim-colors-xcode'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'phanviet/vim-monokai-pro'
+Plug 'nvimdev/oceanic-material'
+Plug 'ayu-theme/ayu-vim'
+"Plugin para estetica de la IDLE
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 "Pluggins de Python
 Plug 'vim-python/python-syntax'
 Plug 'Valloric/YouCompleteMe'
@@ -71,11 +76,18 @@ set background=dark
 "colorscheme molokai
 "colorscheme badwolf
 "colorscheme xcodehc
-"este monokai si me gusto
-colorscheme vim-monokai-tasty
+"colorsheme onehalfdark
+"colorsheme ayu
+"colorscheme vim-monokai-tasty
 "colorscheme github
-"colorscheme monokai_pro
+"colorscheme monokai_proi
+"colorscheme ayu
+colorscheme oceanic_material
+"Configuracion de la barra de estado
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='deus'
 
+"Mapeo
 let mapleader=" "
 let NERDTreeQuitOnOpen=1
 
